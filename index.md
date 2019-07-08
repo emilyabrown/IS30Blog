@@ -1,7 +1,7 @@
 
 # Project Links
 
-[Project #1: Self Portrait](file:///Users/emilybrown/Desktop/selfieish.html)
+[Project #1: Self Portrait](https://github.com/emilyabrown/IS30Blog/blob/master/selfieish.html)
 
 ## IS30: Week 1 Blog Post
 
