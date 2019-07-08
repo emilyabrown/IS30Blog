@@ -1,4 +1,4 @@
-*[Back to Main Page](index.md)*
+*[< Back to Main Page](index.md)*
 
 ---
 
@@ -21,4 +21,4 @@ Wu, Tim. The Master Switch: the Rise and Fall of Information Empires. Atlantic, 
 
 ___
 
-*[Back to Main Page](index.md)*
+*[< Back to Main Page](index.md)*
