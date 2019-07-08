@@ -1,3 +1,7 @@
+*[Back to Main Page](index.md)*
+
+---
+
 # IS30: Week 1 Blog Post
 
 ## 	In class, many of us were asked what our first memory of the internet was... 
@@ -16,3 +20,5 @@ Carey, James W. Communication as Culture: Essays on Media and Society. Routledge
 Wu, Tim. The Master Switch: the Rise and Fall of Information Empires. Atlantic, 2012.
 
 ___
+
+*[Back to Main Page](index.md)*
