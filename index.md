@@ -5,6 +5,8 @@
 
 ## IS30: Week 1 Blog Post
 
+[Week 1 Blog Post](Week1Blog.md)
+
 ### 	In class, many of us were asked what our first memory of the internet was... 
 *...I remember a giant hulking Macintosh perched on a foreboding desktop in my mother’s office. It was so huge, I thought the delicate desk would buckle under its weight. Sitting on multiple phonebooks, I’d play Webkinz on the computer that was bigger than I was. When we began to read about the telegraph, radio, and other early forms of communication that exceeded the limits of physical transportation, I was reminded of the gigantic computer. I remembered thinking how something so inelegant could be responsible for holding and sending all of our important information. I wonder if children in homes that housed this first telegraphs thought the same thing. As I learn more about the nature of information and its relatively recent technological evolution, I consider how they were woven into the ‘common sense’ culture of their societies. The Carey reading does an excellent job of explaining how the telegraph, the pioneering invention in communication as we know it today, set about implementing these changes.*
 
