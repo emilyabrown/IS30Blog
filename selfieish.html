@@ -64,7 +64,7 @@ body,html{
   font-family:"Alegreya Sans SC";
 }
 
-.hero-text button:hover {
+.hero-textb button:hover {
   background-color: white;
   color: white;
 }
@@ -86,9 +86,9 @@ body,html{
   top: 80%;
   height:25%;
   width:50%
-  color: white;
   font-family: "Nanum Myeongjo";
 }
+  
 .backtoit{
   text-align:left;
   position:absolute;
@@ -97,7 +97,23 @@ body,html{
   cursor:pointer;
   color:black;
 }
-.backtoit: hover{
+ .backtoit button{
+  text-align:left;
+  position:absolute;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  top:75%;
+  transform:translate(-50%,50%);
+  color: black;
+  background-color: #d0e2db;
+  text-align: center;
+  cursor: pointer;
+  font-family:"Alegreya Sans SC";
+}
+  
+.backtoit button: hover{
   color:white;
 }
   
@@ -113,7 +129,7 @@ body,html{
     <h1 style="font-size:30px">emily brown</h1>
     </div>
   <div class="hero-textb">
-    <button style="font-size:15px "onclick="window.location.href = 'selfportrait.html';">play now!</button>
+    <button style="font-size:15px" "onclick="window.location.href = 'selfportrait.html';">play now!</button>
   </div>
 </div>
 <div class="column">
@@ -125,7 +141,7 @@ body,html{
   </div>
   </div>
 <div class="backtoit">
-  <h1 style="font-size:15px"onclick="window.location.href = 'https://emilyabrown.github.io/IS30Blog/';">Back to Main Page></div>
+  <button style="font-size:15px"onclick="window.location.href = 'https://emilyabrown.github.io/IS30Blog/';">Back to Main Page></button>
   </div>
     
 </body>
