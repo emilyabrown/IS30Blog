@@ -179,6 +179,37 @@ img.sticky {
   margin-top:65px;
   margin-left:45px;
 }
+  
+.backtomain{
+  text-align:left;
+  position:absolute;
+  top:85%;
+  font-family:"Alegreya Sans SC";
+  cursor:pointer;
+  color:black;
+}
+ .backtomain button{
+  text-align:center;
+  position:absolute;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  margin:15px;
+  padding: 10px;
+  top:95%;
+  left:10%;
+  color: black;
+  background-color: #c0d8d0;
+  text-align: center;
+  cursor: pointer;
+  font-family:"Alegreya Sans SC";
+}
+  
+.backtomain button: hover{
+  color:white;
+  background-color: black;
+}
+  
 </head>
 </style>
 
@@ -191,22 +222,20 @@ img.sticky {
     <h1 style="font-size:22px">drag each image to its correct spot to solve the puzzle!</h1>
     </div>
 </div>
-
-
-div class="row">
+<div class="row">
   <div class="columna">
     <div id="mydiv1"
-     <img id="drag1" src="hairhair200.png" style="width:360px; height:198px; border:3px; top:100px;"></div>
+     <img id="drag1" src="hairhair200.png" style="width:360px; height:198px; border:3px; top:450px; left:15px;"></div>
     </div>
   </div>
   <div class="columna">
     <div id="mydiv2">
-      <img id="drag2" src="earear200.png" style="width:184px; height:199px; border:3px; top:200px;"></div>
+      <img id="drag2" src="earear200.png" style="width:184px; height:199px; border:3px; top:450px; left:390px;"></div>
     </div>
   </div>
   <div class="columna">
     <div id="mydiv3">
-      <img id="drag3" src="forehead200.png" style="width:264px; height:421px; border:3px;"></div>
+      <img id="drag3" src="forehead200.png" style="width:264px; height:421px; border:3px; top:580px;"></div>
     </div>
   </div>
   <div class="columna">
@@ -252,7 +281,10 @@ div class="row">
     </div>
   </div>
 </div>
-
+<div class="backtomain">
+  <button style="font-size:15px"onclick="window.location.href = 'https://emilyabrown.github.io/IS30Blog/';">Back to Main Page></button>
+  </div>
+      
 <script>
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv1"));
