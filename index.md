@@ -9,4 +9,4 @@
 
 [Week 1 Blog Post](Week1Blog.md)
 
-[Week 2 Blog Post](Week2Blog.md)
+[Week 2 Blog Post](week2blog.md)
