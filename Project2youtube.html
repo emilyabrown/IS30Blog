@@ -24,7 +24,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav input[type=text] {
@@ -36,9 +36,9 @@ body {
   font-size: 17px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav a, .topnav input[type=text] {
-    float: none;
+    float: center;
     display: block;
     text-align: left;
     width: 100%;
@@ -50,7 +50,6 @@ body {
     border: 1px solid #ccc;  
   }
 }
-
 
 /* Style the tab */
 .tab {
@@ -79,7 +78,7 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #D0D0D0;
+  background-color: #e9e9e9;
 }
 
 /* Create an active/current "tab button" class */
@@ -94,7 +93,8 @@ body {
   width: 70%;
   border-left: none;
   height: 300px;
-  background-color:#D0D0D0;
+  margin:15px;
+  background-color:#e9e9e9;
 }
 
 </style>
@@ -104,31 +104,33 @@ body {
     <a class="title" href="#"><i class="fa fa-youtube-play fa-lg" aria-hidden="true" style="color:red; padding:15px"></i>IS30 Final Project: YouTube</a>
     <div class="search-container">
       <form action="/action_page.php">
-        <input type="text" placeholder="Search..." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Search..." name="search"></i>
       </form>
   </div>
 </div>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'OGYouTube')" id="defaultOpen"><i class="fa fa-newspaper-o fa-fw fa-lg" style="color:red; padding-right:5px;" aria-hidden="true"></i> Original Youtube </button>
+   <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen"><i class="fa fa-home fa-fw fa-lg" style="color:red; padding-right:10px;" aria-hidden="true"></i> Home </button>
+  <button class="tablinks" onclick="openCity(event, 'OGYouTube')" id="defaultOpen"><i class="fa fa-newspaper-o fa-fw fa-lg" style="color:red; padding-right:10px;" aria-hidden="true"></i> Original Youtube </button>
   <button class="tablinks" onclick="openCity(event, 'Monetization')"><i class="fa fa-ban fa-fw fa-lg" aria-hidden="true" style="padding-right:5px; color:red;"></i>Monetization</button>
   <button class="tablinks" onclick="openCity(event, 'data')"><i class="fa fa-database fa-fw fa-lg" aria-hidden="true" style="padding-right:5px; color:red;"></i>Consequences</button>
 </div>
 
-/* Put your info about OG YouTube here */
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>IS30 Final Project by Emily Brown, Eric Siegel, and Vanessa Ta</p>
+</div>
+
 <div id="OGYouTube" class="tabcontent">
   <h3>Original Youtube </h3>
   <p>London is the capital city of England.</p>
 </div>
 
-/* Put your info here about middle YouTube here */
 <div id="Monetization" class="tabcontent">
   <h3>Introduction of Monetezation</h3>
   <p>Paris is the capital of France.</p> 
 </div>
 
-/* Put your info about YouTube now */
 <div id="YouTubetoday" class="tabcontent">
   <h3>Consequences of Monetization</h3>
   <p>Tokyo is the capital of Japan.</p>
@@ -154,5 +156,8 @@ document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
+
+
+
 
 
