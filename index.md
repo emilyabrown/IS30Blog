@@ -2,6 +2,7 @@
 # Project Links
 
 [Project #1: Self Portrait](selfieish.html)
+(youtube2.html)
 
 --- 
 
