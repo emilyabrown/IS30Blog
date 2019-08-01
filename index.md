@@ -3,7 +3,7 @@
 
 [Project #1: Self Portrait](selfieish.html)
 
-[Youtube Attempt](youtube2.html)
+[Youtube Attempt](youtube.html)
 
 --- 
 
