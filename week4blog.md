@@ -6,7 +6,7 @@
 
 ## This week, the reading that spoke to me most was...
 
-*This week, the reading that spoke to me most was...the Lievrouw reading, particularly the section regarding Wikipedia. I remember all throughout elementary and middle school, my teachers would refuse to let us use Wikipedia. Reading this paper allowed me to reconsider the value of collective knowledge.* 
+*...the Lievrouw reading, particularly the section regarding Wikipedia. I remember all throughout elementary and middle school, my teachers would refuse to let us use Wikipedia. Reading this paper allowed me to reconsider the value of collective knowledge.* 
 
 *Liewvrouw essentially discussed what constitutes as legitimate knowledge. Wikipedia’s growth and popularity as reference for many topics also came with questions regarding its quality, credibility, and accuracy. Liewrouw stated Wikipedia’s intrinsic paradox: reliable information resource made without any reliance on professional experts.*
 
