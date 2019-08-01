@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15px;
+  font-family: 'Roboto';
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a, .topnav input[type=text] {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.menu{
+  float:left;
+  width:20%;
+  height:80%;
+  padding:15px;
+  margin:15px;
+}
+.columna{
+  float:left;
+  width:20%;
+  padding-left:10px;
+  height:100%;
+  display:table;
+}
+
+.middlecolumn {
+  float: left;
+  width: 75%;
+  padding:10px;
+  margin:10px;
+  display:table-cell;
+}
+
+.title {
+  float: left;
+  width: 45%;
+  max-height:1000px;
+  font-size:15px;
+  margin-right:35px;
+
+}
+
+.column {
+  float: left;
+  width: 40%;
+  min-height:500px;
+  margin-left:10px;
+  font-size:15px;
+  padding:5px;
+  border:1px solid grey;
+}
+
+.textcolumn {
+  float: left;
+  width: 100%;
+  min-height:500px;
+  font-size:15px;
+  padding:5px;
+}
+
+.tab {
+  float: left;
+  overflow:auto;
+  width: 100%;
+  display:table-cell;
+  padding:20px;
+}
+
+.tab a {
+  float: left;
+  background-color: white;
+  border-left: #ccc;
+  width: 100%;
+  margin:15px;
+  padding: 15px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #e9e9e9;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #CFCFCF;
+}
+
+@media screen and (max-width: 20%) {
+  .tab a, .tab button {
+    float: none;
+    display: block;
+    width: 20%;
+    text-align: left;
+  }
+
+.tabcontent {
+  float: left;
+  border-left: none;
+  margin:5px;
+}
+
+.card {
+   background-color: white;
+   padding: 15px;
+   margin: 15px;
+   margin-bottom:5px;
+   text-align:center;
+   font-family:'Roboto';
+ }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="title" href="#"><i class="fa fa-youtube-play fa-lg" aria-hidden="true" style="color:red; padding:15px"></i>IS30 Final Project: YouTube</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search..." name="search"></i>
+      </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="columna">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen"><i class="fa fa-home fa-fw fa-lg" style="color:red; padding-right:10px;" aria-hidden="true"></i> Home </button>
+      <button class="tablinks" onclick="openCity(event, 'OGYouTube')" id="defaultOpen"><i class="fa fa-newspaper-o fa-fw fa-lg" style="color:red; padding-right:10px;" aria-hidden="true"></i> Original Youtube </button>
+      <button class="tablinks" onclick="openCity(event, 'Monetization')"><i class="fa fa-ban fa-fw fa-lg" aria-hidden="true" style="padding-right:5px; color:red;"></i>Monetization</button>
+      <button class="tablinks" onclick="openCity(event, 'YouTubetoday')"><i class="fa fa-database fa-fw fa-lg" aria-hidden="true" style="padding-right:5px; color:red;"></i>Consequences</button>
+    </div>
+  </div>
+
+  <div class="middlecolumn">
+    <div id="Home" class="tabcontent">
+      <h1 style="padding:5px;">HOME</h1>
+      <p>IS30 Final Project by Emily Brown, Eric Siegel, and Vanessa Ta</p>
+      <div class="title">
+        <h2>YouTube as it Existed</h2>
+      <div class="textcolumn">
+        <p>In February of 2005, three Paypal employees, Chad Hurley, Steve Chen, and Jawed Karim, activated the Youtube domain name. They <a href="https://en.wikipedia.org/wiki/History_of_YouTube
+">came up with the idea for Youtube</a> in 2004 when they realized there was no singular website to upload videos globally. The first youtube video uploaded was by Jawed Karim in April 2005 titled “Me At the Zoo.” Youtube was initially prone to many users uploading copyrighted content and content that was inappropriate by today’s Youtube standard. </p>
+        <p>As seen in the 2005 snapshot of the homepage, Youtube was centered around the user and advertisements were not yet integrated into the design of the homepage. By July 2006, Youtube videos <a href="https://joaogeraldes.wordpress.com/201009/09/2005-2010-youtube-facts-figures-history-statistics/">averaged 100 million views per day</a> and approximately 65,000 videos were uploaded daily. The snapshot of the 2006 Youtube home page only continued to add to user focused functions with the integration of a “My” tool bar that had features such as “My Subscriptions”, “My Friends”, etc. </p>
+        <p>Despite its exponential growth going into 2006, Youtube’s greatest obstacle was <a href="https://www.engadget.com/2016/11/10/the-history-of-youtube/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAKIFdQ-5WT4YjMLO2brmDA0qjzqLF3sTWJ1ycynHOTiM9IbSwXrhZflP21moEAWx03AlxyUvKUXr5p2yutWfxyjy5jCRycaKtHIVtPqiHh_69iVygEJe7wobH82GyW5QKymAcnJ_mxU170Yvv0wbupc4LVAKcp__9FyXLaroIhHO">making the platform profitable</a>. There was no shortage of users on the Youtube. The problem was original content. A good proportion of Youtube’s content was unlawfully used and lacked original content creators. The beginning of that solution came with Google’s acquisition of Youtube for 1.65 billion dollars. Google saw Youtube as a platform with a large audience and untapped potential for advertisers.</p>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Introduction to Monetization</h2>
+      <div class="textcolumn">
+        <p>Google’s main focus after first acquiring Youtube was to grow the user community, which is crazy to think about since by 2007, Youtube had consumed enough internet bandwidth than the entire internet had in the year 2000. It took a little more than year for Google to use Youtube as the cash cow they knew it could be.</p>
+        <p>In August of 2007, in-video <a href="https://searchengineland.com/youtube-now-featuring-promoted-videos-15091">advertisements were introduced</a> into Youtube videos. This had been the first introduction of advertisements that were directly visible on the website. A few months later, Youtube launched the Youtube Partner Program. The Youtube Partner Program is the program that allows users to <a href="https://www.telegraph.co.uk/news/uknews/1584230/Web-could-collapse-as-video-demand-soars.html">make money of their content</a>. The key to that sentence is their content. This incentivized users who uploaded videos to ditch uploading copyrighted content and make content of their own. To complement the new monetization program, Youtube also launched Youtube Insights, which provided data on Youtube videos. The beginning of the program provided basic analytics of videos, but we will discuss this tool later. </p>
+        <p>In 2008, Youtube launched two important features <a href="https://sites.google.com/a/pressatgoogle.com/youtube5year/home/history-of-monetization-at-youtube">directly affecting monetization</a>: promoted videos and pre-roll ads. Sponsored videos or promoted videos, as they were called, were paid advertisements that would appear when users searched videos using certain key words. It’s the same system Google used to put advertisements after users use Google search. Pre roll ads were also introduced as almost a safeguard if promoted videos were ignored. Pre-roll ads would be played right before the content the user clicked on. The integration of these advertisements lead to Youtube increasing the amount of ad formats on Youtube from one to seven. This integration ads also didn’t deter users, who by October 2008, were uploading 15 hours of content per minute.</p>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Design Changes Post-Monetization</h2>
+      <div class="textcolumn">
+        <p>As we highlighted earlier, Youtube’s initial design was totally user focused. Every functionality of Youtube was for the user. This quickly changed with the implementation of advertisement on Youtube.</p>
+        <div class="card">
+          <img src="homeimg1.png" height="250" style="float:left;padding:10px">
+        </div>
+        <p> As can be seen in this design, promoted videos were placed above the featured videos section. The featured videos section was more user based since the videos would be shown if they were trending in popularity. The size of thumbnails in this new 2008 layout also are made smaller to accommodate the new sections of advertised videos. This was a major shift for Youtube and the changes in design only became more prevalent as advertisements become more familiar with Youtube.</p>
+        <div class="card">
+          <img src="homeimg2.png" height="250" style="float:left;padding:10px">
+        </div>
+        <p>Take a look at this screenshot of Youtube from 2010. One thing that is noticeable about this design is the categories that the videos are put in. You see “Entertainment”, “Music”, “News & Politics”, etc. The reason for this categorization may seem user-centric, but advertisers were the real beneficiaries. They needed videos to be categorized so they could tell Youtube where to place there pre-roll advertisements. You will see the “Recommended For You” section of the homepage. This subsection of the homepage signifies the diminishing of user focused initiative on behalf of Youtube and how the placement of a system to generate revenue would be more important to Youtube than it’s users.</p>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Data Mining and Monetization</h2>
+      <div class="textcolumn">
+        <p>It was mentioned previously Youtube put into place the Youtube Insights tool into the website. This tool may seem to be useful to the user, but again, the real beneficiary of this analytical tool is Youtube and as the website would continue to grow in popularity and convention, more and more data was collected on Youtube’s users and their behaviors. </p>
+        <p>The main metric that was used to show content on the homepage was view count. It was easy to use but it suffered from a major problem: clickbait. A catchy title could be shared from user to user, but could be a major spread of misinformation or distasteful content. To combat this problem, Youtube was able to collect other data to influence it’s algorithm such as session-time (how long a user has been on the Youtube platform as a content creator),video duration,how well your video’s metadata (title, description, keywords) fit the user’s search query, and how much your video has engaged users already (likes, comments, watch time). While this data was helpful to advertisers because they know what audiences would watch their advertisements, this put a strain on content creators whose videos were being monetized to put out content on a continual basis so as not to “fall off”.</p>
+        <p>In 2018, Youtube made the ultimate appeasement to advertisers by implementing the new and now <a href="https://blog.hootsuite.com/how-the-youtube-algorithm-works/">notorious monetization policy</a> that defunded a lot of original content creators on Youtube. The reasoning behind this was so Youtube was now free to focus on much fewer channels who were eligible to be monetized and allowing advertisers to put more confidence in the kinds of channels they associated with their brands. It was later reported in 2018 that these brands who were in favor of the new monetization policy were having their ads placed in videos that promoted fringe content and hate speech. </p>
+      </div>
+    </div>
+    <div class="title">
+      <h2>Consequences of Monetization</h2>
+      <div class="textcolumn">
+        <p>As we have outlined, Youtube made clear design changes that were a result of Google’s quest to capitalize on Youtube’s financial potential. However, these consequences had a major impact on the original motivation for creating Youtube: content. </p>
+        <p>Before the heavy prevalence of advertisements, it was easier for Youtubers to have their videos monetized. It didn’t take as long for up and coming Youtubers to have their content monetized and there are quite a large number of Youtubers now who make a sustainable income solely of Youtube. With the new monetization policies, new Youtube content creators have a more difficult time using the income from monetization from Youtube to sustain them will they create new and original content. Instead of requiring 10,000 lifetime views to be eligible for monetization alone, Youtubers now need 4,000 hours of watch time on their videos in the past 12 months and 1,000 subscribers. This makes it more challenging for <a href="https://www.magneticmag.com/2018/01/youtubes-new-monetization-policy-impact-new-artists/">new Youtubers</a> because getting subscribers without a strong base is hard and 4,000 hours of watch time in 12 months requires content to be a combination of long, interesting, and shared. </p>
+        <p>The result of the new monetization policy goes beyond design changes. Youtube may not realize it, but it is holding back future content creators that could make Youtube more money than they could imagine. Youtubers who are just getting on their feet don’t have all this time to make videos without receiving some assistance from the platform for initial efforts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div id="OGYouTube" class="tabcontent">
+       <h1 style="padding:5px;">ORIGINAL YOUTUBE</h1>
+          <div class="card">
+            <div class="middlecolumn">
+            <video height="250" poster="cats.png" style="position:left;" controls>
+            <source src="cats.mp4" type="video/mp4">
+            </video>
+            <iframe height="250" src="https://www.youtube.com/watch?v=wEaAUZfe8bY" style="position:left;padding-right:2px">
+            </iframe>
+              <div class="middlecolumn">
+                <div class="title">
+                  <h2><u>Cats!</u></h2>
+                </div>
+                <div class="title">
+                  <h2><u>Long Boi</u></h2>
+                </div>
+              </div>
+              <div class="column">
+                <p>Short videos about animals were very popular.They were low-risk, universally liked, and easy to produce. In early YouTube, only views mattered, not run time, so creators made videos as short at possible.</p>
+                <p> AdSense was used, which did not play before the video, so viewers could get straight to the content. The lack of advertisement meant that it was not yet profitable to build a career on YouTube.</p>
+                <p>YouTube was simply about sharing everyday life experiences.</p>
+              </div>
+              <div class="column">
+                <p>This is an example of content that is popular now, but would have been impossible to promote in YouTube’s early existence. This is for a multitude of reasons.</p>
+                <p>First, YouTube was not intended for long format videos (it’s limit was capped at 10 minutes). This also meant that, in general, YouTube did not promote videos that were in-depth or meant to spark discussion. There were intended to be light hearted, slice-of-life content.</p>
+                <p>Second, large companies, like the Daily Show or other news outlets, were not on YouTube. In fact, these companies saw YouTube as a “leech”, stealing and pirating content that was not their own. This resulted in many copyright issues, and YouTube was unable to turn a positive profit until 2009.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div id="Monetization" class="tabcontent">
+    <h1 style="padding:5px;">INTRODUCTION OF MONETIZATION</h1>
+      <div class="card">
+        <div class="middlecolumn">
+          <video height="250" poster="fruitninja.png" style="position:left;" controls>
+          <source src="fruitninja.mp4" type="video/mp4">
+          </video>
+          <video height="250" poster="makeup.png" style="position:left; padding-left:10px" controls>
+          <source src="Makeover.mp4" type="video/mp4">
+          </video>
+          <div class="middlecolumn">
+            <div class="title">
+              <h2><u>Fruit Ninja</u></h2>
+            </div>
+            <div class="title">
+              <h2><u>Makeup!</u></h2>
+            </div>
+          </div>
+            <div class="column">
+              <p>(0:8) Youtube has become all about self promotion, and many constantly reference previously created content in their videos. Eric does this as well, by referencing another time he played fruit ninja (in class). Because of this mention, we are more likely to try and watch/realize the next time he plays in class, further promoting his content.</p>
+              <p>This is also another example of users following content for commentary, not necessarily the instructional video itself. Anyone can play fruit ninja, yet it is Eric’s personality and casualness that creates a feeling of familiarity. It establishes a relationship between viewer and creator.</p>
+              <p>As such, creators have an incentive to become more performative. Eric would never say these things out loud if he was playing on his own. He adopts a persona in order to attract an audience.</p>
+              <p>This lead to the development of the gaming community, one of the largest video niches on YouTube today. The popularity of these videos have led to the creation of other game streaming services like Twitch.</p>
+            </div>
+            <div class="column">
+              <p>Instructional videos quickly became popular. Not because of the content, but because of the creator's personality. Their personality created a "brand", which had a loyal fan base. The more views, the more profit a YouTuber made.</p>
+              <p>We also see videos develop to serve niche audiences, giving rise to "communities", like the makeup community. For example, Emily calls her fans "Brownies" in order to further loyalty and familarity. Engaging directly with the viewers is another way to extend a sense of community</p>
+              <p>YouTubers could also make more money by promoting products within their videos. In tandem with the ads attached by YouTube, makeup videos quickly became a popular genre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div id="YouTubetoday" class="tabcontent">
+    <h1 style="padding:5px;">CONSEQUENCES OF MONETIZATION</h1>
+      <div class="card">
+        <div class="middlecolumn">
+          <video height="250" poster="LGBTQfront.png" style="position:left; padding-right:10px" controls>
+          <source src="SexE.mp4" type="video/mp4">
+          </video>
+          <video height="250" poster="cookies.png" style="position:left;" controls>
+          <source src="Oatmealboi.mp4" type="video/mp4">
+          </video>
+        <div class="middlecolumn">
+          <div class="title">
+            <h2><u>LGBTQ+ Sex Ed</u></h2>
+          </div>
+          <div class="title">
+            <h2><u>Oatmeal Cookies</u></h2>
+          </div>
+        </div>
+          <div class="column">
+            <p>(0:00) Generally, educational videos on YouTube have become the most low-risk options for corporations to run advertisements on. They are “safe”, universally well-liked and uncontroversial. Sex education videos, however, do not fit this catergory.</p>
+            <p>However, YouTube guidelines restrict pornographic or nude materials. While educational videos are, in theory, exempt from this (using models and diagrams), it is difficult for algorithms to differentiate between the two.</p>
+            <p>(0:23) Some YouTubers’ have gotten around this by using fruit or other everyday objects as stand-ins for genitalia. Here, Emily’s model uses leaves and flowers to portray genitalia, making it more “friendly” to audiences. In order for YouTubers to find the loopholes in YouTube’s monetization policy, they have to compromise the integrity of their content. </p>
+            <p>(0:51) Sex ed videos are further demontized due to “controversial” content, ie. content about nonheterosexual relationships. Here, Emily expands on the nonbinary gender spectrum. While legislation has promoted greater LBTQ rights, these civil liberties are constantly being threatened in the US and around the world (ie. transgender folk in the military), and content is therefore  seen as unmarketable.</p>
+            <p>(1:29) Similarly, videos about birth control are likely to be risky for advertisers, as the current American political climate becomes more and more polarized on this issue. Regardless of what the individual CEO of the company believes, these topics are simply too risky. By omitting content surrounding birth control, YouTube educators limit the scope and application of their teachings.</p>
+            <p>Companies have gone so far as to avoid monetizing a video that contains the word “lesbian”. The widely-accepted term disproportionately limits the monetization of lesbian YouTube creators. Trans YouTuber Chase Ross is one of many who face this discrimination, as his videos are often demonitzed or age-gated (restricted for certain audiences). </p> 
+            <p>Some anti-gay organizations have even gone so far as to target LGBTQ videos, by opting to place homophobic/transphobic ads in front of the content.</p>
+            <p>(2:26) Sex education videos are also age-gated due to the belief that kids are not mature enough, or that education about sex will lead to more unprotected sex. Yet, kids will explore who they are regardless of what we tell them. It is up to us to give them a safe and educational environment to do so.</p>
+          </div>
+          <div class="column">
+            <p>Here, we see that personality has become completely removed from the content, as YouTube has shifted away from it’s subscriber system to a machine learning system. This decreases the need for a loyal subscriber base.</p>
+            <p>This marks the shift of autonomy for the viewer, as one no longer gets to choose/subscriber to content, rather, the content is presented to them. This also marks a decrease in monetization for many creators, as their videos are no longer being promoted to their subscribers.</p>
+            <p>The content that does become popular is usually void of personality in order to appeal to a large number of people. DIY, cooking, and art/ASMR videos follow this trend. These videos are rarely produced by one individual, but by large companies like Buzzfeed and 5 Minute Crafts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</script>
+</html>
